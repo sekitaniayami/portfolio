@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+html{background-color: #f1f5fc;}
+html{font-size: 30px;}
+html{text-align:center}
+h3{font-size: 25px;}
+a {text-decoration: none;}/*下線なし*/
+a:visited{color:rgb(43, 43, 43)}/*ボタン色変えない*/
+li {list-style: none;}/*リストの点を消す*/
+
+/*フォント*/
+h3{font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 10px;
+  }
+html{
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/*背景グリッド*/
+html {background-image: linear-gradient(90deg, transparent 31px, #b6c4d8 32px), linear-gradient(0deg, transparent 31px, #b3b3b3 32px);
+    background-size: 32px 32px;
+    background-repeat: repeat;
+    background-position: center center;}
+.nav{background-image: linear-gradient(90deg, transparent 31px, #b6c4d8 32px), linear-gradient(0deg, transparent 31px, #b3b3b3 32px);
+        background-size: 32px 32px;
+        background-repeat: repeat;
+        background-position: center center;}
+
+/*ナビ*/
+h1{font-size: 25px;
+    color: rgb(43, 43, 43);
+}
+.main-nav {
+    display: flex;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 20px;
+}
+.main-nav a:hover {
+    color: #ffffff;
+}
+
+
+.main-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+.nav {
+    display: flex;
+    justify-content: space-between
+}
+.nav img{margin: 5px 5px 5px 5px;}
+
+/*上部固定ナビ*/
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10000;
+    background-color: #f1f5fc;
+    height: 50px;
+}
+
+.item-1 img{
+    margin-top: 100px;
+    width: 65%;
+    text-align: center;
+}
+.item img{width: 100%;}
+
+/* アクティブな画像の枠線を変更 */
+.item li.current img {
+    border: 2px solid #285CAA;
+    transition: border .5s;}
+
+/*グリッド*/
+.grid {
+    display: flex;
+    gap: auto;/*gap=余白*/
+    width: 65%;
+    height: 50%;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;/*late-columns=余白の幅　fr=余白比率*/
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.item {
+    width: 30%;
+    max-width: 30%;
+}
+
+p {width: 80%;
+    text-align: left;
+    font-size: 15px;
+    line-height: normal;
+    position: relative;
+    margin-top: 5%;
+    border-top: 2px dashed #2e476d;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.item-2 img{
+    width: 35px;
+    height: 35px;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.button-1 img{
+    margin-top: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: absolute;
+    left: 0;
+}
+.button-2 img{
+    margin-top: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: absolute;
+    right: 0;
+}
+
+h4{font-size: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 5%;
+    margin-bottom: 5%;
+}
